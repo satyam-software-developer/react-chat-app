@@ -2,8 +2,8 @@
 
 React chat app built using react for frontend web development.
 
-1. Git repository link:https://github.com/satyam-software-developer/todolist-react-app.git
-2. Hosted link: https://satyam-software-developer.github.io/todolist-react-app/
+1. Git repository link: https://github.com/satyam-software-developer/react-chat-app.git
+2. Hosted link: https://satyam-software-developer.github.io/react-chat-app/
 
 # React Chat Application
 
@@ -74,7 +74,7 @@ Prerequisites
 
 1.Clone the repository:
 
-- git clone https://github.com/yourusername/react-chat-app.git
+- git clone https://github.com/satyam-software-developer/react-chat-app.git
 
 2. Navigate to the project directory:
 
@@ -135,7 +135,7 @@ Prerequisites
 
 The project is hosted at:
 
-- [GitHub Pages/Netlify/Firebase] (Replace with your hosting URL)
+- https://satyam-software-developer.github.io/react-chat-app/
 
 # Steps to Deploy
 
@@ -162,7 +162,7 @@ This project is licensed under the MIT License.
 
 ## DEMO
 
-- https://satyam-software-developer.github.io/todolist-react-app/
+- https://satyam-software-developer.github.io/react-chat-app/
 
 ## Author
 
