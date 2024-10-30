@@ -1,0 +1,23 @@
+body {
+  margin: 0; /* Remove default margin for the body to eliminate whitespace around the page */
+  box-sizing: border-box; /* Use border-box model so padding and borders are included in the element's total width and height */
+  overflow: hidden; /* Prevent scrollbars from appearing on the page */
+  font-size: 14px; /* Set a base font size of 14 pixels for the entire document */
+  font-family: "Open Sans", sans-serif; /* Use the "Open Sans" font for text, with a fallback to sans-serif */
+}
+
+.link-tag {
+  text-decoration: none; /* Remove underline from links for a cleaner look */
+}
+
+/* Media queries - styles applied based on the screen size or device type */
+
+.right-sidebar {
+  padding: 0; /* Remove padding for the right sidebar */
+  background-color: #002147; /* Set a dark blue background color for the right sidebar */
+  background-image: url(../../images/background.jpeg); /* Use a background image for the right sidebar */
+}
+
+.left-sidebar {
+  background-color: rgb(21, 15, 39); /* Set a dark color for the left sidebar */
+}

@@ -1,0 +1,115 @@
+.header {
+  display: flex; /* Use flexbox for layout, allowing easy alignment of items */
+  align-items: center; /* Center items vertically within the header */
+  padding: 1rem; /* Add padding around the header */
+}
+
+.avatar {
+  width: 49px; /* Set width of the avatar image */
+  height: 49px; /* Set height of the avatar image */
+  border-radius: 50%; /* Make the avatar image circular */
+  margin: 0 8px; /* Add horizontal margin around the avatar */
+}
+
+.header p {
+  font-size: 18px; /* Set font size for text within the header */
+  color: #fff; /* Set text color to white */
+  font-family: cursive, "Open Sans", sans-serif; /* Use cursive font first, with fallback to "Open Sans" and then to sans-serif */
+}
+
+.contact-tab {
+  display: flex; /* Use flexbox for layout within each contact tab */
+  align-items: center; /* Center items vertically in the contact tab */
+  border-bottom: 2px solid black; /* Add a black border at the bottom of each contact tab */
+  padding: 3px; /* Add padding within each contact tab */
+}
+
+.contactText {
+  display: flex; /* Use flexbox to layout contact text */
+  justify-content: space-between; /* Space out child elements evenly */
+  font-size: 13px; /* Set font size for contact text */
+  color: #aab1cbf1; /* Set text color for contact text */
+  width: auto; /* Set width to auto to fit content */
+}
+
+.contactText p {
+  overflow-wrap: break-word; /* Allow long words to break onto the next line */
+  word-wrap: break-word; /* Same as above for compatibility with older browsers */
+  hyphens: auto; /* Enable hyphenation for long words */
+}
+
+/* Header for the left sidebar with shadow effect */
+.left-sidebar-header {
+  box-shadow: 0 4px 8px 0 rgb(59 59 59 / 20%),
+    /* Subtle shadow effect */ 0 6px 20px 0 rgb(0 0 0 / 19%); /* Deeper shadow for depth */
+}
+
+/* New conversation tab styles */
+.new-convo {
+  display: flex; /* Use flexbox for layout in the new convo section */
+  color: #fff; /* Set text color to white */
+  justify-content: space-between; /* Space out items evenly */
+}
+
+.new-convo p {
+  font-size: 16px; /* Set font size for text in new conversation section */
+}
+
+.new-convo .fas {
+  cursor: pointer; /* Change cursor to pointer to indicate clickable icon */
+  padding: 8px; /* Add padding around the icon */
+}
+
+.new-convo-tab {
+  border: 1px solid rgb(31, 25, 53); /* Add border to the new conversation tab */
+  height: 400px; /* Set fixed height for the new conversation tab */
+  width: 400px; /* Set fixed width for the new conversation tab */
+  background-color: #002147; /* Set dark blue background color for the tab */
+  position: absolute; /* Position absolutely within the parent container */
+  top: 100px; /* Position from the top */
+  right: 350px; /* Position from the right */
+  z-index: 99; /* Ensure this tab appears above other elements */
+}
+
+.nct-header {
+  background-color: #151523; /* Set dark background for the header of new convo tab */
+  color: #fff; /* Set text color to white */
+  height: 55px; /* Set height for the header */
+  display: flex; /* Use flexbox for layout */
+  padding: 10px; /* Add padding around the header */
+  justify-content: space-between; /* Space out child elements evenly */
+}
+
+.nct-header p {
+  font-size: 18px; /* Set font size for text in the header */
+}
+
+.nct-header .fas {
+  cursor: pointer; /* Change cursor to pointer for clickable icon */
+}
+
+.nct-list {
+  height: 343px; /* Set fixed height for the list of contacts in new convo tab */
+  overflow: auto; /* Enable scrolling if content exceeds height */
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 1200px) {
+  .new-convo-tab {
+    width: 300px; /* Decrease width for smaller screens */
+  }
+}
+
+@media screen and (max-width: 792px) {
+  .new-convo-tab {
+    top: 100px; /* Maintain top position */
+    right: 30%; /* Adjust right position for smaller screens */
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .new-convo-tab {
+    top: 100px; /* Maintain top position */
+    right: 20%; /* Further adjust right position for very small screens */
+  }
+}

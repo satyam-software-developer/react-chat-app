@@ -1,17 +1,40 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// Import React and ReactDOM libraries
+import React from "react";
+import ReactDOM from "react-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+// Import global CSS styles
+import "./index.css";
+
+// Import Bootstrap CSS for styling
+import "bootstrap/dist/css/bootstrap.min.css";
+
+// Import the main App component
+import App from "./components/App";
+
+// Import Redux Provider to connect React with Redux store
+import { Provider } from "react-redux";
+
+// Import HashRouter from react-router-dom for routing
+import { HashRouter as Router } from "react-router-dom";
+
+// Import the function to configure the Redux store
+import { configureStore } from "./store";
+
+// Create the Redux store by calling the configureStore function
+const store = configureStore();
+
+// Render the React application into the DOM
+ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    {/* Router provides routing capabilities */}
+    <Router>
+      {/* Provider makes the Redux store available to the App component */}
+      <Provider store={store}>
+        {/* Render the main App component */}
+        <App />
+      </Provider>
+    </Router>
+  </React.StrictMode>,
+  // Specify the HTML element with ID 'root' as the target for rendering
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

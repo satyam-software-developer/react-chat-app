@@ -1,0 +1,206 @@
+.no-chat-background {
+  background-color: #564aa3; /* Set a specific background color for the no chat state */
+}
+
+.message-box {
+  height: 95vh; /* Set height to 95% of the viewport height */
+  overflow: auto; /* Enable scrolling if content exceeds the height */
+}
+
+/* Header styles for the message box */
+.message-box-header {
+  background: rgb(19, 17, 46); /* Dark background color for the header */
+  position: fixed; /* Keep the header fixed at the top */
+  top: 0; /* Align to the top of the viewport */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding in width calculations */
+  z-index: 3; /* Ensure it stays above other elements */
+  box-shadow: 0 4px 8px 0 rgba(216, 213, 216, 0.2),
+    /* Subtle shadow for depth */ 0 6px 20px 0 rgba(111, 196, 174, 0.336); /* Deeper shadow effect */
+}
+
+.messages-section {
+  margin-top: 60px; /* Add top margin to avoid overlap with the fixed header */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack messages vertically */
+  justify-content: space-around; /* Space out messages evenly */
+  padding: 30px 40px; /* Add padding around the message section */
+}
+
+.message-bubble {
+  display: flex; /* Use flexbox to align items within the message bubble */
+  align-items: center; /* Center items vertically */
+}
+
+.mbr {
+  flex-direction: row-reverse; /* Reverse the layout for messages sent by the user */
+}
+
+/* No messages found alert */
+.no-message-alert {
+  position: absolute; /* Position absolutely within the container */
+  bottom: 50px; /* Distance from the bottom */
+  left: 60%; /* Center horizontally */
+  font-size: 18px; /* Set font size */
+  color: #fff; /* Set text color to white */
+  background-color: rgb(150, 62, 167); /* Set background color for alert */
+  padding: 1.2rem; /* Add padding for better spacing */
+}
+
+@media screen and (max-width: 622px) {
+  .no-message-alert {
+    font-size: 14px; /* Decrease font size on smaller screens */
+  }
+}
+
+/* Left chat bubble styles */
+.left-bubble {
+  width: 220px; /* Set fixed width for the left bubble */
+  height: auto; /* Height adjusts to content */
+  display: block; /* Block display for proper layout */
+  background: #4c899a; /* Set background color */
+  border-radius: 4px; /* Rounded corners */
+  position: relative; /* Position relative for arrow positioning */
+  margin: 15px 0; /* Vertical margin for spacing */
+  padding: 8px; /* Add padding inside the bubble */
+  color: #e6ecf7f1; /* Set text color to white */
+}
+
+@media screen and (max-width: 792px) {
+  .left-bubble {
+    width: 200px; /* Reduce width on smaller screens */
+    padding: 6px; /* Reduce padding */
+    margin: 10px 0; /* Adjust margin */
+  }
+  .name {
+    font-size: 12px; /* Decrease font size for name */
+  }
+  .message {
+    font-size: 13px; /* Decrease font size for message text */
+  }
+}
+
+@media screen and (max-width: 622px) {
+  .message {
+    font-size: 12px; /* Further decrease font size for messages */
+  }
+}
+
+.txt {
+  padding: 8px 55px 8px 14px; /* Custom padding for specific text */
+}
+
+.message {
+  overflow-wrap: break-word; /* Allow long words to break onto the next line */
+  word-wrap: break-word; /* Compatibility for older browsers */
+  hyphens: auto; /* Enable hyphenation */
+}
+
+.name {
+  font-weight: 600; /* Set font weight for names */
+  font-size: 13px; /* Set font size for names */
+  margin: 0 0 4px; /* Set bottom margin */
+  color: #fff; /* Set text color to white */
+}
+
+.message-timestamp {
+  font-size: 11px; /* Set font size for message timestamps */
+  position: absolute; /* Position absolutely within the bubble */
+  bottom: 8px; /* Position near the bottom */
+  right: 10px; /* Position to the right */
+  text-transform: uppercase; /* Transform text to uppercase */
+  color: rgba(236, 236, 255, 0.929); /* Light color with some transparency */
+}
+
+.bubble-arrow {
+  position: absolute; /* Position absolutely for the arrow */
+  width: 0; /* No width */
+  bottom: 42px; /* Position above the bubble */
+  left: -16px; /* Align to the left */
+  height: 0; /* No height */
+}
+
+.bubble-arrow:after {
+  content: ""; /* Empty content for pseudo-element */
+  position: absolute; /* Position absolutely */
+  border: 0 solid transparent; /* Initial border setup */
+  border-top: 9px solid #f5f5f5; /* Create the arrow effect with a top border */
+  border-radius: 0 20px 0; /* Rounded border for the arrow */
+  width: 15px; /* Width of the arrow */
+  height: 30px; /* Height of the arrow */
+  transform: rotate(145deg); /* Rotate the arrow to point correctly */
+}
+
+/* Right chat bubble styles */
+.right-bubble {
+  width: 220px; /* Set fixed width for right bubble */
+  height: auto; /* Height adjusts to content */
+  display: block; /* Block display for proper layout */
+  background: #6240c6e0; /* Set background color */
+  border-radius: 4px; /* Rounded corners */
+  position: relative; /* Position relative for arrow positioning */
+  margin: 10px 0; /* Vertical margin for spacing */
+  align-self: flex-end; /* Align to the right for user messages */
+  padding: 8px; /* Add padding inside the bubble */
+  color: #e6ecf7f1; /* Set text color to white */
+}
+
+@media screen and (max-width: 792px) {
+  .right-bubble {
+    width: 200px; /* Reduce width on smaller screens */
+    padding: 6px; /* Reduce padding */
+    margin: 10px 0; /* Adjust margin */
+  }
+}
+
+.bubble-arrow-alt {
+  right: -2px; /* Position for the alternate arrow */
+  bottom: 40px; /* Position above the bubble */
+  left: auto; /* Reset left positioning */
+}
+
+.bubble-arrow-alt:after {
+  transform: rotate(45deg) scaleY(-1); /* Adjust rotation for the alternate arrow */
+}
+
+/* Message input styles */
+.message-input {
+  background-color: #1a1a2e; /* Dark background for the input area */
+  position: fixed; /* Keep input fixed at the bottom */
+  bottom: 0; /* Align to the bottom of the viewport */
+  width: 100%; /* Full width */
+  padding: 12px; /* Add padding */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.message-input input {
+  background-color: #0d0d1a; /* Darker background for input field */
+  color: white; /* White text for input */
+  border: 1px solid #333; /* Optional: Add border to input */
+  outline: none; /* Remove default outline */
+  padding: 6px; /* Add padding for input */
+  width: 100%; /* Full width input */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+/* Send button styles */
+.send-button {
+  background-color: #0d0d1a; /* Dark background for button */
+  width: 30%; /* Set width of the button */
+  color: white; /* White text for button */
+  padding: 6px; /* Add padding */
+  border: none; /* Remove border for a cleaner look */
+  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+  font-weight: bold; /* Make text bold for better visibility */
+}
+
+.send-button:hover {
+  background-color: #333333; /* Darker shade on hover */
+}
+
+@media screen and (max-width: 792px) {
+  .send-button {
+    font-size: 12px; /* Decrease font size on smaller screens */
+    width: 40%; /* Adjust width for smaller screens */
+  }
+}
