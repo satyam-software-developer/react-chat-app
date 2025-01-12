@@ -2,16 +2,16 @@
 
 React chat app built using react for frontend web development.
 
-1. Git repository link: https://github.com/satyam-software-developer/react-chat-app.git
+1. Demo: https://drive.google.com/file/d/1DcX8zmpGtmErAG0jOTFW4u8Ar3MP239a/view?usp=sharing
 2. Hosted link: https://satyam-software-developer.github.io/react-chat-app/
 
 # React Chat Application
 
-The React Chat Application is a simple frontend project that simulates a chat interface. It allows a dummy logged-in user to search for conversations by contact name, create new conversations, and send messages. The app features a left sidebar with a list of all conversations, displaying the contact name and the last message. Users can start new conversations by selecting contacts from a pop-up modal. The right-side panel shows messages for the selected conversation and includes an input field to send new messages.
+The React Chat Application is a simple front-end project that simulates a chat interface. It allows a dummy logged-in user to search for conversations by contact name, create new conversations, and send messages. The app features a left sidebar with a list of all conversations, displaying the contact name and the last message. Users can start new conversations by selecting contacts from a pop-up modal. The right-side panel shows messages for the selected conversation and includes an input field to send new messages.
 
 The project uses React Hooks for state management, React Router for navigating between conversations, and optionally, Redux for data persistence to maintain conversations and messages after a page refresh. Dummy data is loaded from a JSON file for simulating contacts and conversations. Alerts notify users of message send success or errors. The app is styled flexibly, focusing on core functionality rather than specific design.
 
-This chat app is an exercise in building an interactive frontend using modern React techniques and state management.
+This chat app is an exercise in building an interactive front end using modern React techniques and state management.
 
 # Project Overview
 
@@ -72,7 +72,7 @@ Prerequisites
 
 # Installation Steps
 
-1.Clone the repository:
+1. Clone the repository:
 
 - git clone https://github.com/satyam-software-developer/react-chat-app.git
 
@@ -159,10 +159,6 @@ The React Chat Application demonstrates essential concepts in building an intera
 ## License
 
 This project is licensed under the MIT License.
-
-## DEMO
-
-- https://satyam-software-developer.github.io/react-chat-app/
 
 ## Author
 
